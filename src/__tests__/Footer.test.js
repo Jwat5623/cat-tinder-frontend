@@ -9,7 +9,6 @@ describe("<Footer />", () => {
         <Footer />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
     const indexLink = screen.getByText( 
        /remember, every paw\-sitive swipe brings us one step closer to a world ruled by cuddles and catnip! 😻/i
     )

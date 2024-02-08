@@ -11,7 +11,6 @@ describe("<Header />", () => {
       </BrowserRouter>
     )
    
-     screen.logTestingPlaygroundURL()
    
     const indexLink = screen.getByRole('heading', {
   name: /welcome to purrfect matches! 🐾/i

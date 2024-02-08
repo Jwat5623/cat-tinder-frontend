@@ -11,9 +11,7 @@ describe("<App />", () => {
         <App />
       </BrowserRouter>
     )
-    Debugging 
-    screen.debug()
-    screen.logTestingPlaygroundURL()
+  
     Act
     const image = screen.getByRole('img', {
       name: /toast kitty hard at work/i
@@ -29,7 +27,6 @@ describe("<App />", () => {
       </BrowserRouter>
     )
 
-    screen.logTestingPlaygroundURL()
     const list = screen.getByRole('list')
     expect(list).toBeInTheDocument()
   })
