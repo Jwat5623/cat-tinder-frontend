@@ -1,23 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'
-import toastKitty from "./assets/cat-home.png"
+import cat from "./assets/cat.png"
 
 describe("<App />", () => {
   it("renders an image", () => {
-    Arrange
+    // Arrange
     render(
       <BrowserRouter>
         <App />
       </BrowserRouter>
     )
-  
-    Act
     const image = screen.getByRole('img', {
-      name: /toast kitty hard at work/i
+      name: /cat on boots/i
     })
-    Assert
-    expect(image).toHaveAttribute("src", toastKitty)
+    expect(image).toHaveAttribute("src", cat)
   })
 
   it("renders an nav list", () => {
@@ -26,22 +23,8 @@ describe("<App />", () => {
         <App />
       </BrowserRouter>
     )
-
-    const list = screen.getByRole('list')
+    screen.logTestingPlaygroundURL()
+    const list = screen.getByRole('link', { name: /lists/i })
     expect(list).toBeInTheDocument()
   })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
