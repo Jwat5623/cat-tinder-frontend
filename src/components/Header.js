@@ -9,12 +9,12 @@ const Header = () => {
       </div>
       <nav>
         <ul className="navigation">
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
+            <p>
+            <NavLink to="/catindex">Lists</NavLink>
+            </p>
+            <p>
             <NavLink to="/catnew">Add a Cat</NavLink>
-          </li>
+            </p>
         </ul>
       </nav>
     </header>
@@ -22,3 +22,4 @@ const Header = () => {
 }
 
 export default Header;
+

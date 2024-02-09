@@ -2,6 +2,7 @@
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f5deb3; 
+  text-align: center;
 }
 
 .not-found-container {
@@ -32,6 +33,7 @@
   bottom: 0;
   position: fixed;
   width: 100%;
+  text-align: center
 }
 
 .header-container {
@@ -47,4 +49,40 @@
 
 .welcome-message h1 {
   font-size: 24px;
+}
+
+img {
+  width: 100%; 
+  height: auto; 
+  padding: 20px
+}
+
+.cat-index-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.cat-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h3 {
+  text-align: center;
+}
+
+.footer-container ul {
+  list-style-type: none;
+}
+
+.main-content-image {
+  width: 500px;
+  height: auto;
+  
+  
+
 }
