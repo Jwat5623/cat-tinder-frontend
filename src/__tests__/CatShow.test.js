@@ -13,8 +13,13 @@ describe("<CatShow />", () => {
         </Routes>
       </MemoryRouter>
     )
-
-    const catName = screen.getByTestId("cat-name")
-    expect(catName).toHaveTextContent(mockCats[0].name)
+    const catName = screen.getByText(/name:oscar/i)
+    expect(catName).toBeInTheDocument()
+    const catAge = screen.getByText(/age: 5/i)
+    expect(catAge).toBeInTheDocument()
+    const catEnjoys = screen.getByText(
+      /swipe right if youre feline fine and ready to mingle! im a whisker\-twitching aficionado of belly rubs and cardboard boxes, seeking a purr\-fect partner for lazy afternoons and midnight zoomies\./i
+      )
+    expect(catEnjoys).toBeInTheDocument()
   })
 })

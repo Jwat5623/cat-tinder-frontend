@@ -80,9 +80,18 @@ h3 {
 }
 
 .main-content-image {
-  width: 500px;
+  width: 45rem;
   height: auto;
-  
-  
+}
 
+.nav {
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #62815c !important;
+}
+
+.nav-link:hover {
+  font-weight: bold;
 }
