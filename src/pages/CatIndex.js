@@ -4,7 +4,7 @@ import { NavLink as RouterNavLink } from "react-router-dom"
 const CatIndex = ({ cats }) => {
   return (
     <>
-      <h3>Meet All the Cats</h3>
+      <h3>Meet the Cats</h3>
       <div className="cat-index-section">
         {cats?.map((cat) => {
           return (

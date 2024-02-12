@@ -8,7 +8,7 @@ const CatShow = ({ cats }) => {
 
   return (
     <>
-      <h3>CatShow component</h3>
+      <h3>Meet this Cat</h3>
       <img 
         src={cat?.image}
         alt="profile of all our cats friends"
@@ -16,7 +16,7 @@ const CatShow = ({ cats }) => {
       />
       <p data-testid="cat-name">Name:{cat?.name}</p>
       <p>Age: {cat?.age}</p>
-      <p>{cat?.about}</p>
+      <p>About: {cat?.about}</p>
     </>
   )
 }
