@@ -23,7 +23,7 @@ const App = () => {
     fetch("http://localhost:3000/cats")
       .then((response) => response.json(response))
       .then((data) => setCats(data))
-      .catch((errors) => console.log("Cat create errors:", errors))
+      .catch((errors) => console.log("Cat read errors:", errors))
   }
   
   const createCat = (newCat) => {
