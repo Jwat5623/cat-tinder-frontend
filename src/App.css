@@ -30,8 +30,6 @@
 .footer-container {
   padding: 20px;
   font-size: 12px;
-  bottom: 0;
-  position: fixed;
   width: 100%;
   text-align: center
 }
@@ -59,9 +57,12 @@ img {
 
 .cat-index-section {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   padding: 0 50px;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .cat-profile-container {
@@ -94,4 +95,8 @@ h3 {
 
 .nav-link:hover {
   font-weight: bold;
+}
+
+img {
+  width: 300px
 }

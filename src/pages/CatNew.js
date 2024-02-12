@@ -8,7 +8,7 @@ const CatNew = ({ createCat }) => {
   const [newCat, setNewCat] = useState ({
     name: "",
     age: "",
-    enjoys: "",
+    about: "",
     image: ""
   })
 
@@ -45,8 +45,8 @@ const CatNew = ({ createCat }) => {
         </FormGroup>
         <FormGroup>
           <Input
-            id="enjoys"
-            name="enjoys"
+            id="about"
+            name="about"
             placeholder="Enter What Your Cat Likes To Do"
             type="textarea"
             onChange={handleChange}
