@@ -22,7 +22,7 @@ const CatNew = ({ createCat }) => {
     navigate("/catindex")
   }
   return (
-    <div>
+    <div className="form-conatiner">
       <h3>Add Your Info To Make New Friends</h3>
       <Form>
         <FormGroup>

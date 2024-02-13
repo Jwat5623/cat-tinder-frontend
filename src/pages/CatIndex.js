@@ -4,7 +4,9 @@ import { NavLink as RouterNavLink } from "react-router-dom"
 const CatIndex = ({ cats }) => {
   return (
     <>
-      <h3>Meet the Cats</h3>
+      <div className="meet-and-greet">   
+        <h3>Meet Your Fellow Felines</h3>
+      </div>
       <div className="cat-index-section">
         {cats?.map((cat) => {
           return (
@@ -14,7 +16,7 @@ const CatIndex = ({ cats }) => {
                 alt="profile of all our cats friends"
                 className="cat-profile-pic"
               />
-              <RouterNavLink to={`/catshow/${cat.id}`}>
+              <RouterNavLink to={`/catshow/${cat.id}`} className="cat-name-link">
                 <p>{cat.name}</p>
               </RouterNavLink>
             </div>
