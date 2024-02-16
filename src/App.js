@@ -39,7 +39,7 @@ const App = () => {
   }
 
   const updateCat = (cat, id) => {
-    fetch(`http://localhost:3001/cat_fights/${id}`, {
+    fetch(`https://cat-tinder-al27.onrender.com${id}`, {
       body: JSON.stringify(cat),
       method: "PATCH",
       headers: {
