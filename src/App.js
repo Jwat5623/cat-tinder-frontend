@@ -19,14 +19,14 @@ const App = () => {
   }, [])
 
   const readCat = () => {
-    fetch("http://localhost:3000/cats")
+    fetch("https://cat-tinder-al27.onrender.com")
       .then((response) => response.json())
       .then((data) => setCats(data))
       .catch((errors) => console.log("Cat read errors:", errors))
   }
 
   const createCat = (newCat) => {
-    fetch("http://localhost:3000/cats", {
+    fetch("https://cat-tinder-al27.onrender.com", {
       body: JSON.stringify(newCat),
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const App = () => {
   }
 
   const updateCat = (cat, id) => {
-    fetch(`http://localhost:3000/cat_fights/${id}`, {
+    fetch(`http://localhost:3001/cat_fights/${id}`, {
       body: JSON.stringify(cat),
       method: "PATCH",
       headers: {
